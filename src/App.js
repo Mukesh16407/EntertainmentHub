@@ -3,7 +3,7 @@ import SimpleBottomNavigation from "./Components/MainNav";
 import { Container } from "@mui/system";
 import { Header } from "./Components/Header";
 
-import{Trending} from './Pages/Trending';
+import{Trending} from './Pages/Trending/Trending';
 import {Movies} from './Pages/Movies';
 import {Series} from './Pages/Series';
 import {Search} from './Pages/Search'
