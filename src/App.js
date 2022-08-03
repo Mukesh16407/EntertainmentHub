@@ -6,7 +6,7 @@ import { Header } from "./Components/Header";
 import{Trending} from './Pages/Trending/Trending';
 import {Movies} from './Pages/Movies';
 import {Series} from './Pages/Series';
-import {Search} from './Pages/Search'
+import {Search} from './Pages/Search/Search'
 import './App.css'
 
 function App() {

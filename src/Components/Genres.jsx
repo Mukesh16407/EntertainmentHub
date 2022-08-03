@@ -28,7 +28,7 @@ const handleRemove = (genre) => {
 const fetchGenresData= async()=>{
 
   try{
-    const {data} =  await axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
+    const {data} =  await axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
     setGenresData(data.genres)
 
   }catch(err){
@@ -37,13 +37,10 @@ const fetchGenresData= async()=>{
 }
 useEffect(()=>{
   fetchGenresData() 
-  
-  return () => {
-    setGenresData({}); // unmounting
-  };
+
   // eslint-disable-next-line
 },[])
-  
+ 
   return (
   <div style={{padding:"6px 0px" }}>
    {selectedGenres.map((genre) => (
