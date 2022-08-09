@@ -16,6 +16,7 @@ const darkTheme = createTheme({
   }
 })
 export const Search = () => {
+  
 
   const [searchText, setSearchText] = useState("");
   const [type,setType] = useState(0);
