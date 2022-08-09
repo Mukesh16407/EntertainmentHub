@@ -21,7 +21,7 @@ const Modal1 = styled(Modal)(({theme})=>({
 }))
 
 const Icons = styled('div')((theme)=>({
-  width: "90%",
+    width: "90%",
     height: "80%",
     backgroundColor: "#6e82a4",
     border: "1px solid #282c34",
@@ -81,8 +81,7 @@ export default function ContentModel({children,media,id}) {
       >
         <Fade in={open}>
           {content &&(
-            <Icons>
-            <div className='ContentModal'>
+            <Icons className='ContentModal'>
             <img
                   src={
                     content.poster_path
@@ -130,7 +129,6 @@ export default function ContentModel({children,media,id}) {
                     Watch the Trailer
                   </Button>
                 </div>
-            </div>
           </Icons>
           )}
          
