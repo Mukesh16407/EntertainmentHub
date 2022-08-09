@@ -23,7 +23,7 @@ const Modal1 = styled(Modal)(({theme})=>({
 const Icons = styled('div')((theme)=>({
   width: "90%",
     height: "80%",
-    backgroundColor: "#39445a",
+    backgroundColor: "#6e82a4",
     border: "1px solid #282c34",
     borderRadius: 10,
     color: "white",
@@ -118,7 +118,7 @@ export default function ContentModel({children,media,id}) {
                     {content.overview}
                   </span>
                   <div>
-                     <Gallery/>
+                     <Gallery id={id} media={media} />
                   </div>
                   <Button
                     variant="contained"
